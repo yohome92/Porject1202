@@ -87,6 +87,7 @@ table {
     padding: 10px;
     align-items: center;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 .wrap .header .logo{
     background-image: url(img/logo.png);
@@ -115,6 +116,7 @@ table {
     display: inline-block;
     color:#00251A;
     text-decoration: none;
+    transition: all .3s;
 }
 .menu li:nth-child(1) a{
     border-bottom: 3px solid #00CC99;
@@ -123,6 +125,10 @@ table {
 .menu li:nth-child(2) a{
     margin-right:10px;
 }
+.menu li:nth-child(2) a:hover{
+background-color: #00CC99;
+color:#fff;
+ }
 .swiper {
     position: relative;
     width: 100%;
@@ -337,4 +343,10 @@ table {
     position:fixed;
     bottom:0;
     right:0;
+  }
+  .dropopen{
+    display:none;
+    position:absolute;
+    bottom: 30%;
+    right:25%;
   }
