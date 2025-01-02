@@ -23,6 +23,10 @@ const swiper = new Swiper('.swiper', {
   },
 });
 $(document).ready(function() {
+  $('.drop').click(function(event){
+    event.preventDefault();
+ $('.dropopen').slideToggle();
+      });
     $('.fa-solid.fa-arrow-up').click(function(event){
         $('html,body').animate({
           scrollTop:0
